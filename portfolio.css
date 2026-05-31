@@ -1,0 +1,438 @@
+/* Main Website Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+.skill-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 20px;
+}
+
+.skill-bar div {
+    height: 20px;
+    border-radius: 20px;
+}
+
+.html {
+    width: 90%;
+    background: #0077b6;
+}
+
+.css {
+    width: 85%;
+    background: #0096c7;
+}
+
+.js {
+    width: 70%;
+    background: #00b4d8;
+}
+body{
+    margin:1;
+    font-family:Arial;
+}
+
+/* Logo */
+
+.logo {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: auto;
+
+    /* Round shape */
+    border-radius: 50%;
+
+    /* Optional border */
+    border: 3px solid #3498db;
+
+    /* Smooth animation */
+    transition: 0.4s;
+}
+
+
+/* Navigation */
+nav a {
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #00b4d8;
+}
+nav {
+    background: #0077b6;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #023e8a;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #0096c7;
+}
+.navbar {
+    background: #2c3e50;
+    padding: 15px;
+    text-align: center;
+
+    /* Sticky navbar */
+    position: sticky;
+    top: 0;
+
+    /* Shadow */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+    /* Smooth appearance */
+    animation: slideDown 1s ease;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+
+    margin: 10px;
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+
+    transition: 0.4s;
+}
+
+/* Page load animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Hover Animation */
+.navbar a:hover {
+    background: #3498db;
+
+    transform: translateY(-3px) scale(1.05);
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.logo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #90e0ef;
+}.hero {
+    background-image: url("../Images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+.hero{
+    position:relative;
+    text-align:center;
+    color:white;
+}
+.hero img{
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+
+    /* animation */
+    animation:zoomIn 6s ease-in-out infinite;
+}
+.hero-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 22px;
+}
+.hero-text h1{
+    font-size:40px;
+    animation:fadeUp 2s ease;
+}
+
+/* Subtitle */
+.hero-text p{
+    font-size:18px;
+}
+
+/* Button */
+.hero-text button{
+    padding:10px 20px;
+    border:none;
+    background:#0077b6;
+    color:white;
+    border-radius:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero-text button:hover{
+    transform:scale(1.1);
+    background:#023e8a;
+}
+
+/* Image zoom animation */
+@keyframes zoomIn{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.05);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* Text animation */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Content */
+
+.content {
+    padding: 30px;
+}
+.content {
+    background: white;
+    margin: 30px auto;
+    width: 85%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+/* Images */
+
+.page-image {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Table */
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #0077b6;
+    color: white;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #023e8a;
+}.btn {
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   FORM STYLING
+========================= */
+
+form {
+
+    width: 70%;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+}
+
+form label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 5px;
+
+    border-radius: 5px;
+
+    border: 1px solid #ccc;
+
+}
+
+/* Radio Buttons */
+
+.radio-group label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 10px 0;
+
+}
+
+/* Checkboxes */
+
+.checkbox-group label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 10px 0;
+
+}
+
+/* Buttons */
+
+.btn-submit,
+.btn-reset {
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin-right: 10px;
+
+    font-size: 16px;
+
+}
+
+.btn-submit {
+
+    background: #0077b6;
+
+    color: white;
+
+}
+
+.btn-reset {
+
+    background: #555;
+
+    color: white;
+
+}
+/* Footer */
+
+footer {
+    background: #001d3d;
+    color: white;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width:768px) {
+
+nav a {
+    display: block;
+    margin: 10px;
+}
+
+.page-image {
+    width: 90%;
+}
+
+form {
+    width: 90%;
+}
+
+}
+
+/* Print Friendly */
+
+@media print {
+
+nav,
+footer {
+    display: none;
+}
+
+body {
+    background: white;
+    font-size: 18px;
+}
+
+}
