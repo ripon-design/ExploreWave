@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0px;
+    margin: 0;
     background: #f4f4f4;
     color: #333;
 }
@@ -32,7 +32,7 @@ body {
     background: #00b4d8;
 }
 body{
-    margin:1;
+    margin:1px;
     font-family:Arial;
 }
 /* Hobbies Section */
